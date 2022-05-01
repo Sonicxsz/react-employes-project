@@ -9,17 +9,20 @@
         "eslint:recommended",
         "plugin:react/recommended"
     ],
-    "parserOptions": {
+    "parserOptions": {   
+        "sourceType": "module",    
         "ecmaFeatures": {
             "jsx": true
         },
         "ecmaVersion": "latest"
+        
     },
     "plugins": [
         "react",
         "babel"
     ],
     "rules": {
+        "react/prop-types": "off",
         "babel/new-cap": 1,
         "babel/camelcase": 1,
         "babel/no-invalid-this": 1,
@@ -29,4 +32,6 @@
         "babel/no-unused-expressions": 1,
         "babel/valid-typeof": 1
     }
+    
 }
+
